@@ -29,8 +29,8 @@ root = tk.Tk()
 root.withdraw()
 
 answer = messagebox.askyesno(
-    "Shutdown Confirmation",
-    "Do you want to turn off your PC?"
+    "fuck",
+    "do you want to turn off your pc??"
 )
 
 if answer:

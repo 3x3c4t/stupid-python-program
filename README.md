@@ -1,2 +1,1 @@
-# stupid-python-program
-no reason
+why am i doing ts

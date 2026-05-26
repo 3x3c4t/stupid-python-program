@@ -2,17 +2,26 @@ import tkinter as tk
 from tkinter import messagebox
 import os
 import time
+import sys
 from playsound import playsound
 
 
+def path(filename):
+    try:
+        base_path = sys._MEIPASS
+    except Exception:
+        base_path = os.path.abspath(".")
+    return os.path.join(base_path, filename)
+
+
 def shutdown_pc():
-    playsound("bye.mp3", block=False)
+    playsound(path("bye.mp3"), block=False)
     time.sleep(2)
     os.system("shutdown /s /t 0")
 
 
 def no_shutdown():
-    playsound("lmao.mp3")
+    playsound(path("lmao.mp3"))
     root.destroy()
 
 
